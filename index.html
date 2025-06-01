@@ -1,0 +1,107 @@
+<!-- 
+    Configuração do LESS
+1 - Abra o terminal (F1) e instale o LESS globalmente:
+    npm install -g less
+2 - Execute o comando para criar o package.json:
+    npm init
+3 - Instale o LESS como dependência de desenvolvimento:
+    npm install --save-dev less
+4 - Como boa prática, crie o arquivo ".gitignore" e inclua nele:
+    node_modules
+    Isso evita sobrecarregar o repositório com dependências.
+5 - Crie a pasta "src/styles" e dentro dela o arquivo "main.less"
+6 - No package.json, na seção "scripts", adicione:
+    "less": "lessc ./src/styles/main.less ./build/styles/main.css"
+7 - Para compilar o LESS manualmente, execute no terminal:
+    npm run less
+
+    Configuração do Plugin para compilação automática
+1 - Instale o plugin globalmente:
+    npm install -g less-watch-compiler
+2 - Instale também como dependência de desenvolvimento:
+    npm install --save-dev less-watch-compiler
+3 - IMPORTANTE: Se for usar o plugin, altere o script no package.json para:
+    "less": "less-watch-compiler ./src/styles ./build/styles main.less"
+4 - Execute no terminal para iniciar o watch:
+    npm run less
+5 - Para encerrar o processo, pressione:
+    Ctrl + C
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Kátia</title>
+    <link rel="stylesheet" href="build/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="profile-avatar" src="./src/images/foto-perfil.jpg" alt="Foto de perfil" />
+            <div class="profile-bio">
+                <h1 class="profile-bio-name">Página de Kátia</h1>
+                <h2 class="profile-bio-subtitle">Desenvolvedora Full Stack Python</h2>
+                <p class="profile-bio-description">
+                    Olá! Sou Kátia, Desenvolvedora Full Stack Python em formação pela EBAC – Escola Britânica de Artes Criativas e Tecnologia. Aqui você encontra alguns dos meus projetos, onde aplico meus conhecimentos em desenvolvimento web e tecnologias modernas.
+
+                    Estou sempre em busca de aprendizado contínuo e aprimoramento das minhas habilidades. Compartilho aqui soluções criativas e funcionais. Explore os projetos abaixo e sinta-se à vontade para dar feedback ou contribuir.
+                </p>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/k%C3%A1tia-dantas-amaral-492546279/?originalSubdomain=br" target="_blank">
+                        <img src="./src/images/linkedin.svg" alt="Logo do LinkedIn" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Katiadantass" target="_blank">
+                        <img src="./src/images/github.svg" alt="Logo do GitHub"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://katiadantas.1987@gmail.com" target="_blank">
+                        <img src="./src/images/mail.svg" alt="Logo do Email" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="projects-list">
+                <li class="projects-list-item">
+                    <a href="https://agenda-de-contatos-six-chi.vercel.app/" target="_blank">
+                        Visite o projeto "Agenda de Contatos"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://doce-store.vercel.app/" target="_blank">
+                        Visite o projeto "Doce Store"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://play-na-serie.vercel.app/" target="_blank">
+                        Visite o projeto "Play na Série"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://cafe-em-cena.vercel.app/" target="_blank">
+                        Visite o projeto "Café em Cena"
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p>© 2025 - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
