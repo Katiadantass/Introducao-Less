@@ -2,7 +2,7 @@
 
 ## 📌 Resumo do Projeto  
 Segue repositório da aula atividade do **Módulo 17** do curso **Full Stack Python da EBAC**.  
-O tema do projeto é uma landing page simples, que funciona como uma página de links pessoais, construída com **HTML**, **LESS** e **CSS**.
+O tema do projeto é uma landing page simples, que funciona como uma página de links pessoais, construída com **HTML**, **CSS** e **LESS**.
 
 ---
 
